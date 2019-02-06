@@ -13,8 +13,8 @@ namespace DAL
         {
 
            
-            public DbSet<CuentasBancarias> cuentasbancarias { get; set; }
-            public DbSet<Depositos> depositos { get; set; }
+            public DbSet<Destinatarios> destinatarios { get; set; }
+            public DbSet<Cartas> cartas { get; set; }
 
 
 
