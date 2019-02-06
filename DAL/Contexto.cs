@@ -13,7 +13,7 @@ namespace DAL
         {
 
            
-            public DbSet<Destinatarios> destinatarios { get; set; }
+            public DbSet<Usuarios> Usuarios { get; set; }
             public DbSet<Cartas> cartas { get; set; }
 
 

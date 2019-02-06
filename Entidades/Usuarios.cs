@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Destinatarios
+    public class Usuarios
     {
         [Key]
-        public int Destinatarioid { get; set; }        
+        public int Usuarioid { get; set; }        
         public string Nombre { get; set; }
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public int Cartas { get; set; }
 
-        public Destinatarios()
+        public Usuarios()
         {
-            Destinatarioid = 0;
+            Usuarioid = 0;
             Nombre = string.Empty;
             Telefono = string.Empty;
             Direccion = string.Empty;
