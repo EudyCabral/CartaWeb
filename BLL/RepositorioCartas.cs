@@ -55,7 +55,7 @@ namespace BLL
                 var Cartaanterior = repositorio.Buscar(carta.Idcarta);
 
                 var usuario = contexto.Usuarios.Find(carta.Destinatarioid);
-                var usuarioanterior = contexto.Usuarios.Find(Cartaanterior.Idcarta);
+                var usuarioanterior = contexto.Usuarios.Find(Cartaanterior.Destinatarioid);
 
                 if(carta.Destinatarioid != Cartaanterior.Destinatarioid)
                 {
@@ -65,14 +65,7 @@ namespace BLL
 
                
 
-                //identificar la diferencia ya sea restada o sumada
-                int diferencia;
-                diferencia = 1 - 1;
-              
-              
              
-                //aplicar diferencia al inventario 
-                usuario.Cartas += diferencia;
 
                 contexto.Entry(carta).State = EntityState.Modified;
 

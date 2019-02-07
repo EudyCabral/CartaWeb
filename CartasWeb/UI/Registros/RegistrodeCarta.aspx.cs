@@ -82,7 +82,7 @@ namespace CartasWeb.UI.Registros
 
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
-            Repositorio<Cartas> repositorio = new Repositorio<Cartas>();
+            RepositorioCartas repositorio = new RepositorioCartas();
 
             Cartas cartas = Llenaclase();
 
@@ -135,7 +135,7 @@ namespace CartasWeb.UI.Registros
         protected void ElminarButton_Click(object sender, EventArgs e)
         {
             LimpiarBE();
-            Repositorio<Cartas> repositorio = new Repositorio<Cartas>();
+            RepositorioCartas repositorio = new RepositorioCartas();
 
             int id = util.ToInt(CartaidTextBox.Text);
             var carta = repositorio.Buscar(id);
