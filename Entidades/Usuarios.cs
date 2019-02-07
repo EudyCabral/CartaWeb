@@ -12,7 +12,6 @@ namespace Entidades
         [Key]
         public int Usuarioid { get; set; }        
         public string Nombre { get; set; }
-        public string Telefono { get; set; }
         public string Direccion { get; set; }
         public int Cartas { get; set; }
 
@@ -20,7 +19,6 @@ namespace Entidades
         {
             Usuarioid = 0;
             Nombre = string.Empty;
-            Telefono = string.Empty;
             Direccion = string.Empty;
             Cartas = 0;
         }

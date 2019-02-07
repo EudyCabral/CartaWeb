@@ -74,7 +74,7 @@
                 <div class="columns" style="width: 400px;">
                     <div class="form-group">
                         <div class="row" style="align-items: center;">
-                            <asp:Button ValidationGroup="ValidacionBE" ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-primary" />
+                            <asp:Button ValidationGroup="ValidacionBE" ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-primary" OnClick="BuscarButton_Click" />
                         </div>
                     </div>
                 </div>
@@ -87,11 +87,11 @@
         <div class="row" style="justify-content: center;">
             <div class="form-group">
 
-                <asp:Button ID="LimpiarButton" class="btn btn-info" runat="server" Text="Limpiar"  />
+                <asp:Button ID="LimpiarButton" class="btn btn-info" runat="server" Text="Limpiar" OnClick="LimpiarButton_Click"  />
 
-                <asp:Button ValidationGroup="ValidacionGuardar" ID="GuardarButton" class="btn btn-success" runat="server" Text="Guardar" />
+                <asp:Button ValidationGroup="ValidacionGuardar" ID="GuardarButton" class="btn btn-success" runat="server" Text="Guardar" OnClick="GuardarButton_Click" />
 
-                <asp:Button ValidationGroup="ValidacionBE" ID="ElminarButton" class="btn btn-danger" runat="server" Text="Eliminar"/>
+                <asp:Button ValidationGroup="ValidacionBE" ID="ElminarButton" class="btn btn-danger" runat="server" Text="Eliminar" OnClick="ElminarButton_Click"/>
 
 
             </div>
